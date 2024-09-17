@@ -19,9 +19,7 @@ public class Interfaz extends javax.swing.JFrame {
     
     public Interfaz() {
         initComponents();
-        nombre.setText(" ");
-        txt_cantidad.setText(" ");
-        
+        cantidad.setText("");
         panel_opcion.setVisible(false);
         
         boton_retirar.setEnabled(false);
@@ -61,7 +59,6 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         boton_2 = new javax.swing.JButton();
-        boton_3 = new javax.swing.JButton();
         boton_1 = new javax.swing.JButton();
         boton_6 = new javax.swing.JButton();
         boton_5 = new javax.swing.JButton();
@@ -70,9 +67,10 @@ public class Interfaz extends javax.swing.JFrame {
         boton_8 = new javax.swing.JButton();
         boton_9 = new javax.swing.JButton();
         boton_0 = new javax.swing.JButton();
-        boton_continuar = new javax.swing.JButton();
         boton_cancelar = new javax.swing.JButton();
         boton_borrar = new javax.swing.JButton();
+        boton_3 = new javax.swing.JButton();
+        boton_continuar = new javax.swing.JButton();
         boton_ingresar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -85,11 +83,10 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         panel_opcion = new javax.swing.JPanel();
         txt_opcion = new javax.swing.JLabel();
-        txt_cantidad = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        cantidad = new javax.swing.JLabel();
         nombre = new javax.swing.JLabel();
         saldo = new javax.swing.JLabel();
+        Saldo = new javax.swing.JLabel();
         boton_salir = new javax.swing.JButton();
         boton_retirar = new javax.swing.JButton();
         boton_depositar = new javax.swing.JButton();
@@ -110,107 +107,120 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(204, 204, 204));
         jPanel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        boton_2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_2.setText("2");
-        boton_2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_2ActionPerformed(evt);
             }
         });
 
-        boton_3.setText("3");
-        boton_3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        boton_3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton_3ActionPerformed(evt);
-            }
-        });
-
+        boton_1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_1.setText("1");
-        boton_1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_1ActionPerformed(evt);
             }
         });
 
+        boton_6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_6.setText("6");
-        boton_6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_6ActionPerformed(evt);
             }
         });
 
+        boton_5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_5.setText("5");
-        boton_5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_5ActionPerformed(evt);
             }
         });
 
+        boton_4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_4.setText("4");
-        boton_4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_4ActionPerformed(evt);
             }
         });
 
+        boton_7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_7.setText("7");
-        boton_7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_7ActionPerformed(evt);
             }
         });
 
+        boton_8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_8.setText("8");
-        boton_8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_8ActionPerformed(evt);
             }
         });
 
+        boton_9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_9.setText("9");
-        boton_9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_9ActionPerformed(evt);
             }
         });
 
+        boton_0.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_0.setText("0");
-        boton_0.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_0.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_0ActionPerformed(evt);
             }
         });
 
-        boton_continuar.setText("Continuar");
-        boton_continuar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 51)));
-        boton_continuar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton_continuarActionPerformed(evt);
-            }
-        });
-
+        boton_cancelar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_cancelar.setText("Cancelar");
-        boton_cancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0)));
+        boton_cancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0), 4));
         boton_cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_cancelarActionPerformed(evt);
             }
         });
 
+        boton_borrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         boton_borrar.setText("Borrar");
-        boton_borrar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 0)));
+        boton_borrar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 0), 4));
         boton_borrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_borrarActionPerformed(evt);
+            }
+        });
+
+        boton_3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        boton_3.setText("3");
+        boton_3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        boton_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton_3ActionPerformed(evt);
+            }
+        });
+
+        boton_continuar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        boton_continuar.setText("Continuar\n");
+        boton_continuar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 51), 4, true));
+        boton_continuar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton_continuarActionPerformed(evt);
             }
         });
 
@@ -243,33 +253,34 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(boton_borrar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(boton_continuar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(boton_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(boton_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(boton_continuar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(76, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(boton_1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(boton_4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_continuar, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(boton_7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton_borrar, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(boton_0, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addComponent(boton_0, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         boton_ingresar.setText("Ingresar");
@@ -287,21 +298,21 @@ public class Interfaz extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(boton_ingresar, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(59, 59, 59))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(90, 90, 90)
-                        .addComponent(boton_ingresar, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                        .addComponent(boton_ingresar, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
@@ -321,8 +332,8 @@ public class Interfaz extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 758, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -335,19 +346,19 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(51, 51, 51));
         jPanel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jPanel6.setBackground(new java.awt.Color(255, 153, 153));
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(255, 51, 0));
         jLabel2.setText("Depositar");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(255, 51, 0));
         jLabel3.setText("Retirar");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(255, 51, 0));
         jLabel5.setText("Salir");
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -355,29 +366,31 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("BIENVENIDO/A A BAC :");
 
-        panel_opcion.setBackground(new java.awt.Color(255, 153, 153));
-        panel_opcion.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 1, true));
+        panel_opcion.setBackground(new java.awt.Color(255, 255, 255));
+        panel_opcion.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 4, true));
 
         txt_opcion.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        txt_opcion.setForeground(new java.awt.Color(255, 255, 255));
+        txt_opcion.setForeground(new java.awt.Color(255, 0, 0));
         txt_opcion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txt_opcion.setText("OPCION");
 
-        txt_cantidad.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        txt_cantidad.setForeground(new java.awt.Color(255, 255, 255));
-        txt_cantidad.setText("Cantidad:");
-        txt_cantidad.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 51), 1, true));
+        cantidad.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        cantidad.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        cantidad.setText("Cantidad: Lps.");
+        cantidad.setToolTipText("");
 
         javax.swing.GroupLayout panel_opcionLayout = new javax.swing.GroupLayout(panel_opcion);
         panel_opcion.setLayout(panel_opcionLayout);
         panel_opcionLayout.setHorizontalGroup(
             panel_opcionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_opcionLayout.createSequentialGroup()
+            .addGroup(panel_opcionLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panel_opcionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txt_cantidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txt_opcion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(txt_opcion, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(panel_opcionLayout.createSequentialGroup()
+                .addGap(182, 182, 182)
+                .addComponent(cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_opcionLayout.setVerticalGroup(
             panel_opcionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -385,23 +398,17 @@ public class Interfaz extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(txt_opcion, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(txt_cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addComponent(cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Usuario :");
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Saldo : ");
-
         nombre.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        nombre.setText("Nombre");
+        nombre.setText("Nombre: ");
 
         saldo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        saldo.setText("Lps.  0.00");
+
+        Saldo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Saldo.setText("Saldo: ");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -411,59 +418,51 @@ public class Interfaz extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel3))
-                                .addGap(30, 30, 30))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addComponent(panel_opcion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(250, 250, 250)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(panel_opcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(292, 292, 292))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(325, 325, 325)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(nombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Saldo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(saldo))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(nombre)))
-                .addContainerGap(213, Short.MAX_VALUE))
+                        .addComponent(saldo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(173, 173, 173))))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(nombre))
+                .addGap(23, 23, 23)
+                .addComponent(nombre)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel9))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(saldo))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(Saldo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(24, 24, 24)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(0, 42, Short.MAX_VALUE)
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel3)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel5)
-                        .addGap(21, 21, 21))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8)
-                            .addComponent(saldo))
-                        .addGap(27, 27, 27)
-                        .addComponent(panel_opcion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
+                        .addComponent(jLabel5))
+                    .addComponent(panel_opcion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(21, 21, 21))
         );
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -472,20 +471,20 @@ public class Interfaz extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap(12, Short.MAX_VALUE)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         boton_salir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         boton_salir.setText("-->");
-        boton_salir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_salir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_salirActionPerformed(evt);
@@ -494,7 +493,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         boton_retirar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         boton_retirar.setText("-->");
-        boton_retirar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_retirar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_retirar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_retirarActionPerformed(evt);
@@ -503,7 +502,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         boton_depositar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         boton_depositar.setText("-->");
-        boton_depositar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        boton_depositar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         boton_depositar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boton_depositarActionPerformed(evt);
@@ -515,19 +514,18 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(boton_retirar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(boton_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(boton_depositar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(12, 12, 12))
+            .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(boton_retirar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(boton_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(boton_depositar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 49, Short.MAX_VALUE))
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -536,42 +534,42 @@ public class Interfaz extends javax.swing.JFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(boton_depositar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(boton_retirar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(boton_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27))))
+                        .addGap(27, 27, 27))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 798, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         desktopPane.add(jPanel1);
-        jPanel1.setBounds(0, 0, 780, 750);
+        jPanel1.setBounds(0, 0, 820, 750);
 
         setJMenuBar(menuBar);
 
@@ -579,11 +577,13 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 810, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 812, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 775, Short.MAX_VALUE)
+            .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -591,78 +591,46 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void boton_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_5ActionPerformed
         // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"5";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"5";
-            txt_cantidad.setText(nuevoNumero);
+        if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "5";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "5";
+            cantidad.setText(nuevoNumero);
         }
     }//GEN-LAST:event_boton_5ActionPerformed
 
     private void boton_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_6ActionPerformed
         // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"6";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"6";
-            txt_cantidad.setText(nuevoNumero);
+        if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "6";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "6";
+            cantidad.setText(nuevoNumero);
         }
     }//GEN-LAST:event_boton_6ActionPerformed
 
     private void boton_depositarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_depositarActionPerformed
         // TODO add your handling code here:
-        boolean opcionDepositar = true;
-            
+        opcionDepositar = true;  
         boton_retirar.setEnabled(false);
         boton_depositar.setEnabled(false);
         panel_opcion.setVisible(true);
-            
         txt_opcion.setText("[Deposito] Ingrese una cantidad: ");
-            
-        boton_1.setEnabled(true);
-        boton_2.setEnabled(true);
-        boton_3.setEnabled(true);
-        boton_4.setEnabled(true);
-        boton_5.setEnabled(true);
-        boton_6.setEnabled(true);
-        boton_7.setEnabled(true);
-        boton_8.setEnabled(true);
-        boton_9.setEnabled(true);
-        boton_0.setEnabled(true);
-        
-        boton_continuar.setEnabled(true);
-        boton_borrar.setEnabled(true);
-        boton_cancelar.setEnabled(true);
-            
+        habilitarBotonesNumericos(true);
     }//GEN-LAST:event_boton_depositarActionPerformed
 
     private void boton_retirarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_retirarActionPerformed
         // TODO add your handling code here:
-        boolean opcionRetirar = true;
+        opcionRetirar = true;  
         boton_depositar.setEnabled(false);
         boton_retirar.setEnabled(false);
         panel_opcion.setVisible(true);
-            
         txt_opcion.setText("[Retirar] Ingrese una cantidad: ");
-            
-        boton_1.setEnabled(true);
-        boton_2.setEnabled(true);
-        boton_3.setEnabled(true);
-        boton_4.setEnabled(true);
-        boton_5.setEnabled(true);
-        boton_6.setEnabled(true);
-        boton_7.setEnabled(true);
-        boton_8.setEnabled(true);
-        boton_9.setEnabled(true);
-        boton_0.setEnabled(true);
-        
-        boton_continuar.setEnabled(true);
-        boton_borrar.setEnabled(true);
-        boton_cancelar.setEnabled(true);
+        habilitarBotonesNumericos(true);
     }//GEN-LAST:event_boton_retirarActionPerformed
 
     private void boton_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_salirActionPerformed
@@ -690,7 +658,7 @@ public class Interfaz extends javax.swing.JFrame {
             boton_borrar.setEnabled(false);
             boton_cancelar.setEnabled(false);
         
-            txt_cantidad.setText(" ");
+            cantidad.setText("");
         }else{
             JOptionPane.showMessageDialog(null, "Gracias por usar cajeros BAC");
             System.exit(0);
@@ -701,177 +669,98 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void boton_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_1ActionPerformed
         // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"1";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"1";
-            txt_cantidad.setText(nuevoNumero);
+        if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "1";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "1";
+            cantidad.setText(nuevoNumero);
         }
     }//GEN-LAST:event_boton_1ActionPerformed
 
     private void boton_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_2ActionPerformed
         // TODO add your handling code here:
-         if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"2";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"2";
-            txt_cantidad.setText(nuevoNumero);
+         if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "2";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "2";
+            cantidad.setText(nuevoNumero);
         }
     }//GEN-LAST:event_boton_2ActionPerformed
 
     private void boton_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_3ActionPerformed
         // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"3";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"3";
-            txt_cantidad.setText(nuevoNumero);
+        if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "3";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "3";
+            cantidad.setText(nuevoNumero);
         }
     }//GEN-LAST:event_boton_3ActionPerformed
 
     private void boton_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_4ActionPerformed
         // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"4";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"4";
-            txt_cantidad.setText(nuevoNumero);
+        if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "4";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "4";
+            cantidad.setText(nuevoNumero);
         }
     }//GEN-LAST:event_boton_4ActionPerformed
 
     private void boton_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_7ActionPerformed
         // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"7";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"7";
-            txt_cantidad.setText(nuevoNumero);
+        if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "7";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "7";
+            cantidad.setText(nuevoNumero);
         }
     }//GEN-LAST:event_boton_7ActionPerformed
 
     private void boton_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_8ActionPerformed
         // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"8";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"8";
-            txt_cantidad.setText(nuevoNumero);
+        if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "8";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "8";
+            cantidad.setText(nuevoNumero);
         }
     }//GEN-LAST:event_boton_8ActionPerformed
 
     private void boton_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_9ActionPerformed
         // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"9";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"9";
-            txt_cantidad.setText(nuevoNumero);
-        }
+        if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "9";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "9";
+            cantidad.setText(nuevoNumero);
+}
     }//GEN-LAST:event_boton_9ActionPerformed
 
     private void boton_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_cancelarActionPerformed
         // TODO add your handling code here:
-        txt_cantidad.setText(" ");
+        cantidad.setText(" ");
     }//GEN-LAST:event_boton_cancelarActionPerformed
-
-    private void boton_continuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_continuarActionPerformed
-        // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            opcionDepositar = false;
-            opcionRetirar = false;
-            
-            boton_retirar.setEnabled(true);
-            boton_depositar.setEnabled(true);
-            panel_opcion.setVisible(false);
-            txt_cantidad.setText(" ");
-        
-            boton_1.setEnabled(false);
-            boton_2.setEnabled(false);
-            boton_3.setEnabled(false);
-            boton_4.setEnabled(false);
-            boton_5.setEnabled(false);
-            boton_6.setEnabled(false);
-            boton_7.setEnabled(false);
-            boton_8.setEnabled(false);
-            boton_9.setEnabled(false);
-            boton_0.setEnabled(false);
-        
-            boton_continuar.setEnabled(false);
-            boton_borrar.setEnabled(false);
-            boton_cancelar.setEnabled(false); 
-            
-        }else if(opcionDepositar ==true){
-            opcionDepositar = false;
-            
-            nuevaCantidad = Double.parseDouble(String.valueOf(txt_cantidad.getText()));
-            prog.depositar(nuevaCantidad);
-            
-            saldo.setText(String.valueOf(prog.getSaldo()));
-            boton_retirar.setEnabled(true);
-            boton_depositar.setEnabled(true);
-            panel_opcion.setVisible(false);
-            txt_cantidad.setText(" ");
-        
-            boton_1.setEnabled(false);
-            boton_2.setEnabled(false);
-            boton_3.setEnabled(false);
-            boton_4.setEnabled(false);
-            boton_5.setEnabled(false);
-            boton_6.setEnabled(false);
-            boton_7.setEnabled(false);
-            boton_8.setEnabled(false);
-            boton_9.setEnabled(false);
-            boton_0.setEnabled(false);
-        
-            boton_continuar.setEnabled(false);
-            boton_borrar.setEnabled(false);
-            boton_cancelar.setEnabled(false); 
-        }else if(opcionRetirar == true){
-            opcionRetirar = false;
-            nuevaCantidad = Double.parseDouble(String.valueOf(txt_cantidad.getText()));
-            prog.retirar(nuevaCantidad);
-            saldo.setText(String.valueOf(prog.getSaldo()));
-            boton_retirar.setEnabled(true);
-            boton_depositar.setEnabled(true);
-            panel_opcion.setVisible(false);
-            txt_cantidad.setText(" ");
-        
-            boton_1.setEnabled(false);
-            boton_2.setEnabled(false);
-            boton_3.setEnabled(false);
-            boton_4.setEnabled(false);
-            boton_5.setEnabled(false);
-            boton_6.setEnabled(false);
-            boton_7.setEnabled(false);
-            boton_8.setEnabled(false);
-            boton_9.setEnabled(false);
-            boton_0.setEnabled(false);
-        
-            boton_continuar.setEnabled(false);
-            boton_borrar.setEnabled(false);
-            boton_cancelar.setEnabled(false); 
-        }
-    }//GEN-LAST:event_boton_continuarActionPerformed
 
     private void boton_borrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_borrarActionPerformed
         // TODO add your handling code here:
-        txt_cantidad.setText(txt_cantidad.getText().substring(0,txt_cantidad.getText().length()-1));
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText(" ");
+        cantidad.setText(cantidad.getText().substring(0,cantidad.getText().length()-1));
+        if(cantidad.getText().equals(" ")){
+            cantidad.setText(" ");
         }
     }//GEN-LAST:event_boton_borrarActionPerformed
 
@@ -886,15 +775,46 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void boton_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_0ActionPerformed
         // TODO add your handling code here:
-        if(txt_cantidad.getText().equals(" ")){
-            txt_cantidad.setText("");
-            nuevoNumero = txt_cantidad.getText()+"0";
-            txt_cantidad.setText(nuevoNumero);
-        }else{
-            nuevoNumero = txt_cantidad.getText()+"0";
-            txt_cantidad.setText(nuevoNumero);
+        if(cantidad.getText().trim().isEmpty()) {
+            cantidad.setText("");
+            nuevoNumero = cantidad.getText() + "0";
+            cantidad.setText(nuevoNumero);
+        } else {
+            nuevoNumero = cantidad.getText() + "0";
+            cantidad.setText(nuevoNumero);
         }
     }//GEN-LAST:event_boton_0ActionPerformed
+
+    private void boton_continuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_continuarActionPerformed
+        if (cantidad.getText().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Por favor, ingrese una cantidad válida.");
+            return;
+        }
+        try {
+            nuevaCantidad = Double.parseDouble(cantidad.getText().trim());
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "Cantidad no válida. Por favor, ingrese un número.");
+            return;
+        }
+
+        if (opcionDepositar) {
+            opcionDepositar = false;  // Evita que se mantenga activa la opción
+            prog.depositar(nuevaCantidad);
+            actualizarSaldo();
+            JOptionPane.showMessageDialog(null, "Depósito realizado con éxito.");
+        
+        } else if (opcionRetirar) {
+            opcionRetirar = false;  // Evita que se mantenga activa la opción
+            if (nuevaCantidad > prog.getSaldo()) {
+                JOptionPane.showMessageDialog(null, "Saldo insuficiente para realizar el retiro.");
+                return;
+            }
+            prog.retirar(nuevaCantidad);
+            actualizarSaldo();
+            JOptionPane.showMessageDialog(null, "Retiro realizado con éxito.");
+        }
+        reinicioInterfaz();
+    }//GEN-LAST:event_boton_continuarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -930,8 +850,52 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
     }
+    private void reinicioInterfaz() {
+        // Ocultamos el panel de opción y limpiamos el campo de cantidad
+        panel_opcion.setVisible(false);
+        cantidad.setText("");  // Limpiamos el campo de cantidad
+    
+        // Habilitamos los botones de depositar y retirar nuevamente
+        boton_depositar.setEnabled(true);
+        boton_retirar.setEnabled(true);
+    
+        // Deshabilitamos los botones numéricos y de control
+        boton_1.setEnabled(false);
+        boton_2.setEnabled(false);
+        boton_3.setEnabled(false);
+        boton_4.setEnabled(false);
+        boton_5.setEnabled(false);
+        boton_6.setEnabled(false);
+        boton_7.setEnabled(false);
+        boton_8.setEnabled(false);
+        boton_9.setEnabled(false);
+        boton_0.setEnabled(false);
+    
+        boton_continuar.setEnabled(false);
+        boton_borrar.setEnabled(false);
+        boton_cancelar.setEnabled(false);
+    }
+    private void actualizarSaldo() {
+        Saldo.setText(String.valueOf(prog.getSaldo()));  // Asegúrate de que saldoLabel es el nombre del JLabel donde muestras el saldo
+    }
+    private void habilitarBotonesNumericos(boolean habilitar) {
+    boton_1.setEnabled(habilitar);
+    boton_2.setEnabled(habilitar);
+    boton_3.setEnabled(habilitar);
+    boton_4.setEnabled(habilitar);
+    boton_5.setEnabled(habilitar);
+    boton_6.setEnabled(habilitar);
+    boton_7.setEnabled(habilitar);
+    boton_8.setEnabled(habilitar);
+    boton_9.setEnabled(habilitar);
+    boton_0.setEnabled(habilitar);
 
+    boton_continuar.setEnabled(habilitar);
+    boton_borrar.setEnabled(habilitar);
+    boton_cancelar.setEnabled(habilitar);
+}
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Saldo;
     private javax.swing.JButton boton_0;
     private javax.swing.JButton boton_1;
     private javax.swing.JButton boton_2;
@@ -949,6 +913,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JButton boton_ingresar;
     private javax.swing.JButton boton_retirar;
     private javax.swing.JButton boton_salir;
+    private javax.swing.JLabel cantidad;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton21;
@@ -956,8 +921,6 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -970,7 +933,6 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel nombre;
     private javax.swing.JPanel panel_opcion;
     private javax.swing.JLabel saldo;
-    private javax.swing.JLabel txt_cantidad;
     private javax.swing.JLabel txt_opcion;
     // End of variables declaration//GEN-END:variables
 

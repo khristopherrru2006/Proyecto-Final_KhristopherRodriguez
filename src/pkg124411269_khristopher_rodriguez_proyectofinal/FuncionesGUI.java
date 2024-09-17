@@ -11,23 +11,23 @@ import javax.swing.JOptionPane;
  * @author khris
  */
 public class FuncionesGUI {
-    public static double saldoActual;
+    private static double Saldo;
     
     public FuncionesGUI(){
-        saldoActual = 0;
+        this.Saldo = 0;
     }
     public void depositar(double deposito){
-        saldoActual += deposito;
+        Saldo += deposito;
     }
     public void retirar(double retiro){
-        if(saldoActual >= retiro){
-            saldoActual -=retiro;
+        if(Saldo >= retiro){
+            Saldo -=retiro;
         }else{
             JOptionPane.showMessageDialog(null, "ERROR - Saldo insuficiente");
         }
     }
     public double getSaldo(){
-        return saldoActual;
+        return Saldo;
     }
     
 }
